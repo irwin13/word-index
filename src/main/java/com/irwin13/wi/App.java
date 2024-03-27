@@ -24,7 +24,7 @@ public class App {
             String filePath = args[i];
             LOGGER.info("======= Processing file '{}' =======", filePath);
             String content;
-            if (filePath.endsWith("html") || filePath.endsWith("html")) {
+            if (filePath.endsWith("html") || filePath.endsWith("htm")) {
                 content = new HtmlReader().getContent(filePath);
             } else {
                 // default to txt file
